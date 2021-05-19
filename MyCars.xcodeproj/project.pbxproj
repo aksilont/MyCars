@@ -14,6 +14,8 @@
 		7A4A9CFD265508F200AB86D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A4A9CFC265508F200AB86D9 /* Assets.xcassets */; };
 		7A4A9D00265508F200AB86D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4A9CFE265508F200AB86D9 /* LaunchScreen.storyboard */; };
 		7A4A9D0D26550B3C00AB86D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4A9D0C26550B3C00AB86D9 /* Main.storyboard */; };
+		7A7D421726558743001A488B /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D421526558743001A488B /* Car+CoreDataClass.swift */; };
+		7A7D421826558743001A488B /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D421626558743001A488B /* Car+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		7A4A9CFF265508F200AB86D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A4A9D01265508F200AB86D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A4A9D0C26550B3C00AB86D9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7A7D421526558743001A488B /* Car+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7A7D421626558743001A488B /* Car+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 		7A4A9D0B265509E000AB86D9 /* Entitis */ = {
 			isa = PBXGroup;
 			children = (
+				7A7D421526558743001A488B /* Car+CoreDataClass.swift */,
+				7A7D421626558743001A488B /* Car+CoreDataProperties.swift */,
 				7A4A9CF9265508F100AB86D9 /* MyCars.xcdatamodeld */,
 			);
 			path = Entitis;
@@ -205,6 +211,8 @@
 				7A4A9CF5265508F100AB86D9 /* ViewController.swift in Sources */,
 				7A4A9CF1265508F100AB86D9 /* AppDelegate.swift in Sources */,
 				7A4A9CFB265508F100AB86D9 /* MyCars.xcdatamodeld in Sources */,
+				7A7D421726558743001A488B /* Car+CoreDataClass.swift in Sources */,
+				7A7D421826558743001A488B /* Car+CoreDataProperties.swift in Sources */,
 				7A4A9CF3265508F100AB86D9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

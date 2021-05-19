@@ -10,10 +10,7 @@ import CoreData
 
 class ViewController: UIViewController {
 
-    lazy var context: NSManagedObjectContext? = {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return nil }
-        return appDelegate.persistentContainer.viewContext
-    }()
+    var context: NSManagedObjectContext!
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var markLabel: UILabel!
