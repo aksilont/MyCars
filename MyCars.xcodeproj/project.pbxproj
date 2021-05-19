@@ -16,6 +16,9 @@
 		7A4A9D0D26550B3C00AB86D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4A9D0C26550B3C00AB86D9 /* Main.storyboard */; };
 		7A7D421726558743001A488B /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D421526558743001A488B /* Car+CoreDataClass.swift */; };
 		7A7D421826558743001A488B /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D421626558743001A488B /* Car+CoreDataProperties.swift */; };
+		7A7D421A265598D3001A488B /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A7D4219265598D3001A488B /* data.plist */; };
+		7A7D421C26559D37001A488B /* InitialData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D421B26559D37001A488B /* InitialData.swift */; };
+		7A7D421E2655AA54001A488B /* ColorValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D421D2655AA54001A488B /* ColorValueTransformer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		7A4A9D0C26550B3C00AB86D9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7A7D421526558743001A488B /* Car+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7A7D421626558743001A488B /* Car+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7A7D4219265598D3001A488B /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		7A7D421B26559D37001A488B /* InitialData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialData.swift; sourceTree = "<group>"; };
+		7A7D421D2655AA54001A488B /* ColorValueTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorValueTransformer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,8 @@
 		7A4A9D09265509C800AB86D9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7A7D4219265598D3001A488B /* data.plist */,
+				7A7D42242655B4AD001A488B /* Models */,
 				7A4A9D0C26550B3C00AB86D9 /* Main.storyboard */,
 				7A4A9CFE265508F200AB86D9 /* LaunchScreen.storyboard */,
 				7A4A9CFC265508F200AB86D9 /* Assets.xcassets */,
@@ -109,11 +117,20 @@
 		7A4A9D0B265509E000AB86D9 /* Entitis */ = {
 			isa = PBXGroup;
 			children = (
+				7A7D421D2655AA54001A488B /* ColorValueTransformer.swift */,
 				7A7D421526558743001A488B /* Car+CoreDataClass.swift */,
 				7A7D421626558743001A488B /* Car+CoreDataProperties.swift */,
 				7A4A9CF9265508F100AB86D9 /* MyCars.xcdatamodeld */,
 			);
 			path = Entitis;
+			sourceTree = "<group>";
+		};
+		7A7D42242655B4AD001A488B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A7D421B26559D37001A488B /* InitialData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +165,7 @@
 				TargetAttributes = {
 					7A4A9CEC265508F100AB86D9 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -176,6 +194,7 @@
 			files = (
 				7A4A9D0D26550B3C00AB86D9 /* Main.storyboard in Resources */,
 				7A4A9D00265508F200AB86D9 /* LaunchScreen.storyboard in Resources */,
+				7A7D421A265598D3001A488B /* data.plist in Resources */,
 				7A4A9CFD265508F200AB86D9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,8 +229,10 @@
 			files = (
 				7A4A9CF5265508F100AB86D9 /* ViewController.swift in Sources */,
 				7A4A9CF1265508F100AB86D9 /* AppDelegate.swift in Sources */,
+				7A7D421C26559D37001A488B /* InitialData.swift in Sources */,
 				7A4A9CFB265508F100AB86D9 /* MyCars.xcdatamodeld in Sources */,
 				7A7D421726558743001A488B /* Car+CoreDataClass.swift in Sources */,
+				7A7D421E2655AA54001A488B /* ColorValueTransformer.swift in Sources */,
 				7A7D421826558743001A488B /* Car+CoreDataProperties.swift in Sources */,
 				7A4A9CF3265508F100AB86D9 /* SceneDelegate.swift in Sources */,
 			);
@@ -352,6 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LA6FA5G5XC;
 				INFOPLIST_FILE = "$(SRCROOT)/MyCars/Environments/Info.plist";
@@ -361,6 +383,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aksilont.MyCars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -371,6 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LA6FA5G5XC;
 				INFOPLIST_FILE = "$(SRCROOT)/MyCars/Environments/Info.plist";
