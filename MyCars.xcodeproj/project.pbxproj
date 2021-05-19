@@ -10,10 +10,10 @@
 		7A4A9CF1265508F100AB86D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A9CF0265508F100AB86D9 /* AppDelegate.swift */; };
 		7A4A9CF3265508F100AB86D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A9CF2265508F100AB86D9 /* SceneDelegate.swift */; };
 		7A4A9CF5265508F100AB86D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A9CF4265508F100AB86D9 /* ViewController.swift */; };
-		7A4A9CF8265508F100AB86D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4A9CF6265508F100AB86D9 /* Main.storyboard */; };
 		7A4A9CFB265508F100AB86D9 /* MyCars.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A9CF9265508F100AB86D9 /* MyCars.xcdatamodeld */; };
 		7A4A9CFD265508F200AB86D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A4A9CFC265508F200AB86D9 /* Assets.xcassets */; };
 		7A4A9D00265508F200AB86D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4A9CFE265508F200AB86D9 /* LaunchScreen.storyboard */; };
+		7A4A9D0D26550B3C00AB86D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4A9D0C26550B3C00AB86D9 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +21,11 @@
 		7A4A9CF0265508F100AB86D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A4A9CF2265508F100AB86D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7A4A9CF4265508F100AB86D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7A4A9CF7265508F100AB86D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A4A9CFA265508F100AB86D9 /* MyCars.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCars.xcdatamodel; sourceTree = "<group>"; };
 		7A4A9CFC265508F200AB86D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A4A9CFF265508F200AB86D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A4A9D01265508F200AB86D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A4A9D0C26550B3C00AB86D9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +58,56 @@
 		7A4A9CEF265508F100AB86D9 /* MyCars */ = {
 			isa = PBXGroup;
 			children = (
-				7A4A9CF0265508F100AB86D9 /* AppDelegate.swift */,
-				7A4A9CF2265508F100AB86D9 /* SceneDelegate.swift */,
-				7A4A9CF4265508F100AB86D9 /* ViewController.swift */,
-				7A4A9CF6265508F100AB86D9 /* Main.storyboard */,
-				7A4A9CFC265508F200AB86D9 /* Assets.xcassets */,
-				7A4A9CFE265508F200AB86D9 /* LaunchScreen.storyboard */,
-				7A4A9D01265508F200AB86D9 /* Info.plist */,
-				7A4A9CF9265508F100AB86D9 /* MyCars.xcdatamodeld */,
+				7A4A9D07265509BC00AB86D9 /* App */,
+				7A4A9D0A265509CE00AB86D9 /* Environments */,
+				7A4A9D09265509C800AB86D9 /* Resources */,
 			);
 			path = MyCars;
+			sourceTree = "<group>";
+		};
+		7A4A9D07265509BC00AB86D9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7A4A9CF0265508F100AB86D9 /* AppDelegate.swift */,
+				7A4A9CF2265508F100AB86D9 /* SceneDelegate.swift */,
+				7A4A9D0B265509E000AB86D9 /* Entitis */,
+				7A4A9D08265509C300AB86D9 /* Flows */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7A4A9D08265509C300AB86D9 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				7A4A9CF4265508F100AB86D9 /* ViewController.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		7A4A9D09265509C800AB86D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7A4A9D0C26550B3C00AB86D9 /* Main.storyboard */,
+				7A4A9CFE265508F200AB86D9 /* LaunchScreen.storyboard */,
+				7A4A9CFC265508F200AB86D9 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7A4A9D0A265509CE00AB86D9 /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+				7A4A9D01265508F200AB86D9 /* Info.plist */,
+			);
+			path = Environments;
+			sourceTree = "<group>";
+		};
+		7A4A9D0B265509E000AB86D9 /* Entitis */ = {
+			isa = PBXGroup;
+			children = (
+				7A4A9CF9265508F100AB86D9 /* MyCars.xcdatamodeld */,
+			);
+			path = Entitis;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +117,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A4A9D04265508F200AB86D9 /* Build configuration list for PBXNativeTarget "MyCars" */;
 			buildPhases = (
+				7A4A9D0E26550B9500AB86D9 /* Swift Lint */,
 				7A4A9CE9265508F100AB86D9 /* Sources */,
 				7A4A9CEA265508F100AB86D9 /* Frameworks */,
 				7A4A9CEB265508F100AB86D9 /* Resources */,
@@ -127,13 +168,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A4A9D0D26550B3C00AB86D9 /* Main.storyboard in Resources */,
 				7A4A9D00265508F200AB86D9 /* LaunchScreen.storyboard in Resources */,
 				7A4A9CFD265508F200AB86D9 /* Assets.xcassets in Resources */,
-				7A4A9CF8265508F100AB86D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7A4A9D0E26550B9500AB86D9 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7A4A9CE9265508F100AB86D9 /* Sources */ = {
@@ -150,14 +212,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7A4A9CF6265508F100AB86D9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7A4A9CF7265508F100AB86D9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7A4A9CFE265508F200AB86D9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +346,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LA6FA5G5XC;
-				INFOPLIST_FILE = MyCars/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyCars/Environments/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +365,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LA6FA5G5XC;
-				INFOPLIST_FILE = MyCars/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyCars/Environments/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
