@@ -6,7 +6,7 @@
 //
 //
 
-import Foundation
+import UIKit
 import CoreData
 
 extension Car {
@@ -22,7 +22,7 @@ extension Car {
     @NSManaged public var model: String?
     @NSManaged public var lastStarted: Date?
     @NSManaged public var imageData: Data?
-    @NSManaged public var tintColor: NSObject?
+    @NSManaged public var tintColor: UIColor?
 
 }
 
